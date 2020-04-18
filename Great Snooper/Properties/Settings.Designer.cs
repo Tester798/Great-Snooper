@@ -1712,5 +1712,18 @@ namespace GreatSnooper.Properties {
                 this["HostPort"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.SettingsProviderAttribute(typeof(PortableSettingsProvider))]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string HostGamePassword {
+            get {
+                return ((string)(this["HostGamePassword"]));
+            }
+            set {
+                this["HostGamePassword"] = value;
+            }
+        }
     }
 }

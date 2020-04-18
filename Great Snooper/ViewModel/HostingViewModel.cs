@@ -33,10 +33,10 @@
             this.MVM = mvm;
 
             this.GameName = Properties.Settings.Default.HostGameName;
+            this.GamePassword = Properties.Settings.Default.HostGamePassword;
             this.UsingWormNat2 = Properties.Settings.Default.HostUseWormnat;
             this.InfoToChannel = Properties.Settings.Default.HostInfoToChannel;
             this.SelectedWaExe = Properties.Settings.Default.SelectedWaExe;
-            this.GamePassword = string.Empty;
             this.ExitSnooper = false;
 
             this.dispatcher = Dispatcher.CurrentDispatcher;
@@ -147,6 +147,7 @@
                 // Save settings
                 string validGameName = WormNetCharTable.Instance.RemoveNonGameChars(GameName.Trim());
                 Properties.Settings.Default.HostGameName = validGameName;
+                Properties.Settings.Default.HostGamePassword = GamePassword;
                 Properties.Settings.Default.HostUseWormnat = UsingWormNat2.HasValue && UsingWormNat2.Value;
                 Properties.Settings.Default.HostInfoToChannel = InfoToChannel.HasValue && InfoToChannel.Value;
                 Properties.Settings.Default.SelectedWaExe = this.SelectedWaExe;

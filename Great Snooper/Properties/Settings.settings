@@ -392,5 +392,8 @@
     <Setting Name="HostPort" Type="System.Int32" Provider="PortableSettingsProvider" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
+    <Setting Name="HostGamePassword" Type="System.String" Provider="PortableSettingsProvider" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>
