@@ -185,12 +185,14 @@
     <Compile Include="Model\TusAccount.cs" />
     <Compile Include="Services\RegexService.cs" />
     <Compile Include="Services\UserCommandService.cs" />
+    <Compile Include="Settings.cs" />
     <Compile Include="Settings\AbstractSetting.cs" />
     <Compile Include="Settings\BoolSetting.cs" />
     <Compile Include="Settings\ComboboxSetting.cs" />
     <Compile Include="CustomUI\SettingTemplateSelector.cs" />
     <Compile Include="Settings\ExportImportSettings.cs" />
     <Compile Include="Settings\NumberSetting.cs" />
+    <Compile Include="Properties\PortableSettingsProvider.cs" />
     <Compile Include="Settings\SoundSetting.cs" />
     <Compile Include="Settings\StringSetting.cs" />
     <Compile Include="Settings\StyleSetting.cs" />
@@ -448,10 +450,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <None Include="app.config">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Great Snooper_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

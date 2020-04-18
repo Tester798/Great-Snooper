@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29324.140
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Great Snooper", "Great Snooper\Great Snooper.csproj", "{935D780B-C3F1-447A-ABB0-6AECC63E8218}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hoster", "WormNat2\Hoster.csproj", "{F9241F48-2768-47CC-9B88-D47EBD77B3D2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Updater", "Updater\Updater.csproj", "{29F759E5-B598-4DBD-8B01-4946DCB7745F}"
-EndProject
-Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "Setup", "Setup\Setup.isproj", "{E7CAE28A-AEB3-4BD0-8AD0-E8F0DD1BF4C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,18 +48,11 @@ Global
 		{29F759E5-B598-4DBD-8B01-4946DCB7745F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{29F759E5-B598-4DBD-8B01-4946DCB7745F}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
 		{29F759E5-B598-4DBD-8B01-4946DCB7745F}.SingleImage|Any CPU.Build.0 = Release|Any CPU
-		{E7CAE28A-AEB3-4BD0-8AD0-E8F0DD1BF4C6}.CD_ROM|Any CPU.ActiveCfg = CD_ROM
-		{E7CAE28A-AEB3-4BD0-8AD0-E8F0DD1BF4C6}.CD_ROM|Any CPU.Build.0 = CD_ROM
-		{E7CAE28A-AEB3-4BD0-8AD0-E8F0DD1BF4C6}.Debug|Any CPU.ActiveCfg = DVD-5
-		{E7CAE28A-AEB3-4BD0-8AD0-E8F0DD1BF4C6}.Debug|Any CPU.Build.0 = DVD-5
-		{E7CAE28A-AEB3-4BD0-8AD0-E8F0DD1BF4C6}.DVD-5|Any CPU.ActiveCfg = DVD-5
-		{E7CAE28A-AEB3-4BD0-8AD0-E8F0DD1BF4C6}.DVD-5|Any CPU.Build.0 = DVD-5
-		{E7CAE28A-AEB3-4BD0-8AD0-E8F0DD1BF4C6}.Release|Any CPU.ActiveCfg = SingleImage
-		{E7CAE28A-AEB3-4BD0-8AD0-E8F0DD1BF4C6}.Release|Any CPU.Build.0 = SingleImage
-		{E7CAE28A-AEB3-4BD0-8AD0-E8F0DD1BF4C6}.SingleImage|Any CPU.ActiveCfg = SingleImage
-		{E7CAE28A-AEB3-4BD0-8AD0-E8F0DD1BF4C6}.SingleImage|Any CPU.Build.0 = SingleImage
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E29E157-1CA0-4EF5-8E2D-D0199A6041C9}
 	EndGlobalSection
 EndGlobal

@@ -109,7 +109,9 @@
                 CIStringComparer);
 
             DefaultGroup = new UserGroup(UserGroups.SystemGroupID);
-            SettingsPath = Directory.GetParent(Directory.GetParent(System.Configuration.ConfigurationManager.OpenExeConfiguration(System.Configuration.ConfigurationUserLevel.PerUserRoamingAndLocal).FilePath).FullName).FullName;
+            string PortableDirectory = Path.Combine(System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location), "Portable");
+            if (!Directory.Exists(PortableDirectory)) Directory.CreateDirectory(PortableDirectory);
+            SettingsPath = PortableDirectory;
             DebugMode = false;
             SpamAllowed = false;
             SystemUser = new User(null, Localizations.GSLocalization.Instance.SystemUserName)
