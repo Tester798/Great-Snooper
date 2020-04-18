@@ -61,6 +61,7 @@
                         <ColumnDefinition Width="22" />
                         <ColumnDefinition Width="28" />
                         <ColumnDefinition Width="240" />
+                        <ColumnDefinition Width="240" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
                     <Image Grid.Column="0" VerticalAlignment="Center" Width="16" Height="16" HorizontalAlignment="Left">
@@ -84,6 +85,8 @@
                                 VerticalAlignment="Center" Text="{Binding Path=Name, Mode=OneTime}" />
                     <TextBlock Grid.Column="3" FontSize="13" HorizontalAlignment="Left"
                                 VerticalAlignment="Center" Text="{Binding Path=Hoster, Mode=OneTime}" />
+                    <TextBlock Grid.Column="4" FontSize="13" HorizontalAlignment="Left"
+                                VerticalAlignment="Center" Text="{Binding Path=Address, Mode=OneTime}" />
                 </Grid>
             </DataTemplate>
         </ListBox.ItemTemplate>
