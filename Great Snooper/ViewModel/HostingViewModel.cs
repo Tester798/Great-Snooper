@@ -16,7 +16,7 @@
 
     class HostingViewModel : ViewModelBase, IDisposable
     {
-        private static Regex PassRegex = new Regex(@"^[a-z]*$", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+        private static Regex PassRegex = new Regex(@"^[a-z0-9]*$", RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
         private string cc;
         private ChannelViewModel channel;
