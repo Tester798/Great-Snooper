@@ -502,6 +502,12 @@
                     if (channelHash.Equals(this.User.Name, StringComparison.OrdinalIgnoreCase))
                     {
                         channelHash = clientName;    // if private message then the channel will be the channel with name of the sender of this message
+                        
+                        // group HostingBuddy messages
+                        if (channelHash.StartsWith("HostingBuddy"))
+                        {
+                            channelHash = "HostingBuddy";
+                        }
                     }
                     string message = (param.Length > spacePos + 1 && param[spacePos + 1] == ':')
                                      ? param.Substring(spacePos + 2)
