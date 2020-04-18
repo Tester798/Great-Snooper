@@ -624,6 +624,12 @@
                     {
                         if (MVM != null)
                         {
+                            // if message from HostingBuddy remove formatting characters
+                            if (channelHash == "HostingBuddy")
+                            {
+                                message = Regex.Replace(message, @"\\p|\\P|\\r", "");
+                            }
+
                             MessageSetting setting = command.Equals("PRIVMSG", StringComparison.OrdinalIgnoreCase) ? MessageSettings.ChannelMessage : MessageSettings.NoticeMessage;
                             MVM.HandleTask(new MessageTask(this, clientName, channelHash, message, setting));
                         }
